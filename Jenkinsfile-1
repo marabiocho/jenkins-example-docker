@@ -10,7 +10,7 @@ pipeline {
 
     stage('docker start') {
       steps {
-        sh service start docker
+        sh 'service start docker'
       }
     }
 
