@@ -7,14 +7,6 @@ pipeline {
   }
 
  stages {
-
-    stage('docker start') {
-      steps {
-        sh 'service start docker'
-      }
-    }
-
-
     stage('Test') {
       steps {
         sh 'node --version'
